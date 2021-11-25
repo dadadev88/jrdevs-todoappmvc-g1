@@ -22,7 +22,6 @@ module.exports.routes = {
   '/': { view: 'pages/homepage' },
   'GET /auth/signin': { action: 'auth/signin' },
   'GET /auth/signup': { view: 'pages/auth/signup', locals: { layout: 'layouts/layout2' } },
-  'GET /*': { view: 'pages/homepage' },
 
   /***************************************************************************
   *                                                                          *

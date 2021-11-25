@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "eslint": "5.16.0",
+    "grunt-contrib-copy": "1.0.0",
     "nodemon": "^2.0.15"
   },
   "scripts": {
