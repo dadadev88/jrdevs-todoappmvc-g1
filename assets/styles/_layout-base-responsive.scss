@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1158px) {
+    body {
+        .container-layout {
+            height: auto;
+            article {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 0.9fr;
+                .text-container {
+                    order: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 0;
+                    height: auto;
+                    .title-container {
+                        width: 100vw;
+                        h1 {
+                            font-size: clamp(30px, 15.4vw, 72px);
+                            ;
+                            margin: 0 0 20px 0;
+                            text-align: center;
+                        }
+                        .icon {
+                            margin-left: 5px;
+                        }
+                    }
+                    p {
+                        margin: 0 20px;
+                        font-size: clamp(20px, 4.3vw, 30px);
+                        width: 90vw;
+                        text-align: center;
+                    }
+                }
+                form {
+                    order: 1;
+                    margin-top: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    body {
+        .container-layout {
+            article {
+                .text-container {
+                    .title-container {
+                        .icon {
+                            display: none;
+                        }
+                    }
+                }
+                form {
+                    width: 330px;
+                    input,
+                    button {
+                        width: 285px;
+                        height: 44px;
+                        font-size: 16px;
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                    h2 {
+                        font-size: 25px;
+                    }
+                    .input-submit {
+                        margin-bottom: 15px;
+                    }
+                    hr {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  clamp(20px,4.3vw,30px);

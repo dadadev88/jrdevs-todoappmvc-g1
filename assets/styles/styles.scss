@@ -1,0 +1,103 @@
+// PRINCIPAL COLORS
+$color-1: #3d5a80; //?Bdazzled Blue
+$color-2: #98c1d9; //?Pale Cerulean
+$color-3: #e0fbfc; //?Light Cyan
+$color-4: #ee6c4d; //?Burnt Sienna
+$color-5: #293241; //?Gunmetal
+// NEUTRAL COLORS
+$color-black: #2f2f2f;
+$color-white: #fbfbfb;
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans:wght@400;700&display=swap');
+$title-font: 'Bungee',
+cursive;
+$text-font:'Noto Sans',
+sans-serif;
+// MODULS
+@import '_layout-base.scss';
+@import '_layout-base-responsive.scss';
+//STYLE RESETS
+* {
+    font-size: 18px;
+    color: $color-black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    text-align: left;
+    font-size: 1em;
+}
+
+html,
+body,
+img,
+form,
+textarea,
+input,
+fieldset,
+div,
+p,
+div,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+a {
+    font-family: $text-font;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+    font-family: inherit;
+}
+
+*:active,
+*:focus {
+    outline: 0;
+    outline-style: none;
+    -moz-outline-style: none;
+    -o-outline-style: none;
+    -webkit-outline-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $title-font;
+    font-weight: normal;
+}

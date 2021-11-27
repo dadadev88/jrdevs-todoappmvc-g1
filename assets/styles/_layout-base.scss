@@ -1,0 +1,134 @@
+*:not(img) {
+    // outline: 1px solid red;
+}
+
+body {
+    .container-layout {
+        background: $color-1;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+        .triangle-top {
+            position: absolute;
+            top: 0;
+            z-index: 0;
+        }
+        .triangle-bottom {
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+        }
+        article {
+            margin: 0 clamp(30px, 6.5vw, 131px);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            .text-container {
+                padding-right: clamp(20px, 10.1vw, 160px);
+                .title-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h1 {
+                        color: $color-4;
+                        font-size: 72px;
+                        display: block ruby;
+                    }
+                    .icon {
+                        margin-left: clamp(10px, 2.5vw, 38px);
+                        width: 78px;
+                        height: 68.22px;
+                    }
+                }
+                p {
+                    font-size: 30px;
+                    line-height: 40.86px;
+                    font-weight: 400;
+                    color: $color-white
+                }
+            }
+            form {
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                position: relative;
+                z-index: 100;
+                background: #fefefe;
+                -webkit-box-shadow: 8px -8px 0px 0px #293241;
+                box-shadow: 8px -8px 0px 0px #293241;
+                width: 474px;
+                border-radius: 5px;
+                margin: auto;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                img {
+                    position: absolute;
+                    z-index: -1;
+                }
+                h2 {
+                    font-size: 36px;
+                    color: $color-4;
+                    margin: 40px 0;
+                    cursor: default;
+                    user-select: none;
+                }
+                input,
+                button {
+                    border-radius: 20px;
+                    width: 368px;
+                    height: 53px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+                input {
+                    padding: 0 40px;
+                    font-family: $text-font;
+                    border: none;
+                    background: #eee;
+                }
+                .input-email {
+                    margin-bottom: 21px;
+                }
+                .input-password {
+                    margin-bottom: 52px;
+                }
+                .input-submit {
+                    cursor: pointer;
+                    margin-bottom: 25px;
+                    background: $color-1;
+                    color: $color-4;
+                    font-family: $title-font;
+                }
+                hr {
+                    color: #b9b9b961;
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+                .register-btn {
+                    cursor: pointer;
+                    text-align: center;
+                    background: $color-1;
+                    margin-bottom: 32px;
+                    border: none;
+                    .register {
+                        color: $color-4;
+                        font-family: $title-font;
+                    }
+                }
+                .password-link {
+                    font-family: $text-font;
+                    margin-bottom: 28px;
+                    font-style: normal;
+                    font-size: 18px;
+                    color: #48e;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
